@@ -1,0 +1,35 @@
+﻿@model RegisterDto
+
+@{ 
+    ViewData["Title"] = "Kutlarız - Kayıt Ol"; 
+}
+ 
+    <div class="card">
+        <div class="container">
+            <form id="register-form" asp-controller="Account" asp-action="Register" method="post">
+                <h1>Kayıt Ol</h1>
+                <div asp-validation-summary="ModelOnly"></div>
+                 
+                <span asp-validation-for="FirstName"></span>
+                <input asp-for="FirstName" class="form-control" placeholder="Adınız" />
+                   
+                <span asp-validation-for="LastName"></span>
+                <input asp-for="LastName" class="form-control" placeholder="Soyadınız" />
+                 
+                <span asp-validation-for="Email"></span>
+                <input asp-for="Email" class="form-control" placeholder="Emailiniz" />
+
+                <span asp-validation-for="Birthday"></span>
+                <input asp-for="Birthday" type="date" class="form-control" />
+
+                <span asp-validation-for="Password"></span>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Parola" />
+
+                <span asp-validation-for="RePassword"></span>
+                <input asp-for="RePassword" type="password" class="form-control" placeholder="Parola tekrar" />
+
+                <input type="submit" value="Kayıt Ol" class="card-btn"/>
+            </form>
+            <p class="login-register-redirect-link">Zaten bir hesabınız var mı? <a asp-action="Login">Giriş yapın.</a></p>
+        </div>
+    </div>

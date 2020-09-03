@@ -1,0 +1,52 @@
+﻿@model BirthdayPersonDto
+
+<div class="card @ViewData["page"]-card @(Model.TimeUntilBirthday == "0" ? "birthday-person": "")">
+
+    <div class="action-icons">
+        <a asp-controller="Birthday" asp-action="Delete" asp-route-id="@Model.Id" class="delete-btn">
+            <i class="fas fa-trash-alt"></i>
+        </a>
+        <a asp-controller="Birthday" asp-action="AddOrUpdate" asp-route-id="@Model.Id" class="details-btn">
+            <i class="far fa-edit"></i>
+        </a>
+        <a class="order-btn"
+           asp-controller="Order"
+           asp-action="Index"
+           asp-route-Birthday="@Model.Birthday.Date"
+           asp-route-FirstLetter="@Model.FirstLetter"
+           asp-route-FirstName="@Model.FirstName"
+           asp-route-LastName="@Model.LastName"
+           asp-route-TimeUntilBirthday="@Model.TimeUntilBirthday"
+           asp-route-ProfilePictureUrl="@Model.ProfilePictureUrl"> 
+            <i class="fas fa-birthday-cake"></i>
+        </a>
+    </div>
+      
+    <div class="profile-picture">
+        @if (Model.ProfilePictureUrl == null)
+        {
+            <span class="fake-picture">@Model.FirstLetter</span> 
+        }
+        else
+        {
+            <img src="@Model.ProfilePictureUrl" alt="doğum günü sahibinin profil resmi"/>
+        }
+    </div>
+    <div class="birthday-person-details">
+        @if (Model.TimeUntilBirthday != "0")
+        {
+            <p><i class="fas fa-user"></i> @(Model.FirstName + " " + Model.LastName)</p>
+            <p><i class="fas fa-birthday-cake"></i> @Model.Birthday.ToShortDateString()</p>
+            <p class="countdown"><i class="far fa-clock"></i> @Model.TimeUntilBirthday</p>
+        }
+        else
+        {
+            <p>@(DateTime.Now.Year - Model.Birthday.Year). Yaşın kutlu olsun, @(Model.FirstName + " " + Model.LastName)!</p>
+            <p><i class="fas fa-birthday-cake"></i> @DateTime.Now.ToShortDateString(), @DateTime.Now.ToString("dddd", new System.Globalization.CultureInfo("tr-TR"))</p>
+        }
+    </div>
+
+
+
+</div>
+

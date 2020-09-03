@@ -1,0 +1,182 @@
+﻿@model OrderModel
+
+<div class="card home-card">
+    <div class="profile-picture">
+        @if (Model.BirthdayPersonDetails.ProfilePictureUrl == null)
+        {
+            <span class="fake-picture">@Model.BirthdayPersonDetails.FirstLetter</span>
+        }
+        else
+        {
+            <img src="@Model.BirthdayPersonDetails.ProfilePictureUrl" alt="doğum günü sahibinin profil resmi" />
+        }
+    </div>
+    <div class="birthday-person-details">
+        <p><i class="fas fa-user"></i> @(Model.BirthdayPersonDetails.FirstName + " " + Model.BirthdayPersonDetails.LastName)</p>
+        <p><i class="fas fa-birthday-cake"></i> @Model.BirthdayPersonDetails.Birthday.ToShortDateString()</p>
+        <p class="countdown"><i class="far fa-clock"></i> @Model.BirthdayPersonDetails.TimeUntilBirthday</p>
+    </div>
+</div>
+  
+<form class="payment-form" asp-controller="Order" asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Order.Price" value="150" />
+    <input type="hidden"
+           asp-for="Order.BirthdayPersonName"
+           value="@(Model.BirthdayPersonDetails.FirstName + " " + Model.BirthdayPersonDetails.LastName)" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.FirstName" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.LastName" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.FirstLetter" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.ProfilePictureUrl" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.Birthday" />
+    <input type="hidden" asp-for="BirthdayPersonDetails.TimeUntilBirthday" />
+    <input type="hidden" name="BirthdayPersonProfilePictureUrl" asp-for="BirthdayPersonDetails.ProfilePictureUrl" />
+
+    <section class="card cake-details">
+
+        <ul class="cake-types">
+            <li class="cake-type">
+                <input onchange="alterCakeType('boutique')" id="boutique-cake" type="radio" asp-for="Order.CakeType" value="Boutique" checked />
+                <label for="boutique-cake">
+                    <img src="/img/boutique-cake.jpg" alt="butik pasta" />
+                    <figcaption>Butik Pasta</figcaption>
+                </label>
+            </li>
+            <li class="cake-type">
+                <input onchange="alterCakeType('cream')" id="cream-cake" type="radio" asp-for="Order.CakeType" value="Cream" />
+                <label for="cream-cake">
+                    <img src="/img/cream-cake.jpg" alt="kremalı pasta" />
+                    <figcaption>Kremalı Pasta</figcaption>
+                </label>
+            </li>
+        </ul>
+
+        <h4 class="cake-type-description"></h4>
+
+        <span asp-validation-for="Order.CakeIngredients"></span>
+        <select asp-for="Order.CakeIngredients" class="form-control">
+            <option>Pasta İçeriği Seçiniz</option>
+            <option value="Muz ve Çikolata">Muz ve Çikolata</option>
+            <option value="Çilek ve Çikolata">Çilek ve Çikolata</option>
+            <option value="Mevsim Meyveli">Mevsim Meyveli</option>
+        </select>
+
+        <span asp-validation-for="Order.CakeSize"></span>
+        <select asp-for="Order.CakeSize" class="form-control">
+            <option>Kişi Sayısı Seçiniz</option>
+            <option value="3">3 Kişilik</option>
+            <option value="5">5 Kişilik + 50 TL</option>
+            <option value="6">6 Kişilik + 60 TL</option>
+            <option value="10">10 Kişilik + 100 TL</option>
+        </select>
+
+        <span asp-validation-for="Order.Message"></span>
+        <input class="form-control" asp-for="Order.Message" placeholder="Pasta üzerine yazılacak metin, örn. İyi ki doğdun Melisa!" />
+
+        <label class="boutique-cake-picture">
+            <span>Butik pastanız için resim yükleyin</span>
+            <input type="file" name="CakePicture" class="form-control" />
+        </label>
+
+    </section>
+
+    <section class="card payment">
+        <section>
+            <h4>Adres</h4>
+
+            <span asp-validation-for="Order.PhoneNumber"></span>
+            <input class="form-control" asp-for="Order.PhoneNumber" placeholder="Telefon numaranız" />
+
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.State"></span>
+                    <select asp-for="Order.State" class="form-control">
+                        <option>Semt Seçiniz</option>
+                        <option value="Balçova">Balçova</option>
+                        <option value="Urla">Urla</option>
+                        <option value="Konak">Konak</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.Neigborhood"></span>
+                    <select asp-for="Order.Neigborhood" class="form-control">
+                        <option>Mahalle Seçiniz</option>
+                        <option value="Korutürk">Korutürk</option>
+                        <option value="Atatürk">Atatürk</option>
+                        <option value="Eğitim">Eğitim</option>
+                        <option value="Karapınar">Karapınar</option>
+                    </select>
+                </div>
+            </div>
+
+            <span asp-validation-for="Order.AddressDescription"></span>
+            <textarea class="form-control" asp-for="Order.AddressDescription" placeholder="Adres Tarifi">
+    </textarea>
+        </section>
+
+        <section>
+            <h4>Ödeme Yöntemleri</h4>
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <label>
+                        <input onchange="changePaymentType('credit')" type="radio" asp-for="Order.PaymentType" value="credit" checked />
+                        Kredi/Banka Kartı
+                    </label>
+                </div>
+                <div class="input-wrapper">
+                    <label>
+                        <input onchange="changePaymentType('ondoor')" type="radio" asp-for="Order.PaymentType" value="ondoor" />
+                        Kapıda
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="credit-card-form">
+            <span>@Html.ValidationMessage("paymentError")</span>
+
+            <span asp-validation-for="Order.CardHolderName"></span>
+            <input type="text" asp-for="Order.CardHolderName" class="form-control" placeholder="Kart Sahibinin Adı" />
+
+
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.CardNumber"></span>
+                    <input type="text" asp-for="Order.CardNumber" class="form-control" placeholder="Kart Numarası" />
+                </div>
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.Cvc"></span>
+                    <input type="text" asp-for="Order.Cvc" class="form-control" placeholder="CVC" />
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.ExpireMonth"></span>
+                    <input type="text" asp-for="Order.ExpireMonth" class="form-control" placeholder="Son Kullanma Tarihi (Ay)" />
+                </div>
+                <div class="input-wrapper">
+                    <span asp-validation-for="Order.ExpireYear"></span>
+                    <input type="text" asp-for="Order.ExpireYear" class="form-control" placeholder="Son Kullanma Tarihi (Yıl)" />
+                </div>
+            </div>
+
+        </section>
+
+        <section class="price-panel">
+            <p>Toplam Tutar: </p>
+            <p id="price">150</p>
+            <p>TL</p>
+        </section> 
+
+        <input class="card-btn" type="submit" value="Siparişi Tamamla" />
+    </section>
+</form>
+
+@section Scripts{
+    <script>
+        alterCakeType(document.querySelector('input[name="Order.CakeType"]:checked').value.toLowerCase());
+        handlePrice();
+        changePaymentType(document.querySelector('input[name="Order.PaymentType"]:checked').value.toLowerCase());
+    </script>
+}
+

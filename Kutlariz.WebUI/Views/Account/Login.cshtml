@@ -1,0 +1,22 @@
+﻿@model LoginDto
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="card">
+    <div class="container">
+        <form id="login-form" asp-controller="Account" asp-action="Login" method="post">
+            <h1>Giriş Yap</h1>
+            <div asp-validation-summary="ModelOnly"></div>
+             
+            <span asp-validation-for="Email"></span>
+            <input asp-for="Email" class="form-control" placeholder="E-mail *" />
+
+            <span asp-validation-for="Password"></span>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Şifre *" />
+
+            <input type="submit" value="Giriş Yap" class="card-btn" />
+        </form>
+        <p class="login-register-redirect-link">Üye değilseniz, <a asp-action="Register">buradan kaydolabilirsiniz.</a></p>
+    </div>
+</div>     

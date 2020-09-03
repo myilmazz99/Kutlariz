@@ -1,0 +1,38 @@
+2020-07-26 01:10:20.2932 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:10:20.4344 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 01:10:22.9484 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:10:22.9763 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-26 01:56:47.8251 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:56:47.9413 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 01:56:50.7427 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:56:50.7708 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-26 01:57:05.2040 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 01:57:05.2389 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 01:58:49.5460 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:58:49.7081 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 01:58:55.4725 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:58:55.5030 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-26 01:59:00.1170 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 01:59:00.1613 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 01:59:54.5102 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 01:59:54.6922 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 01:59:57.4240 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 01:59:57.4904 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 02:01:12.1483 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 02:01:12.3292 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 02:01:14.4886 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 02:01:14.5352 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 02:03:44.7143 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 02:03:44.8700 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 02:03:47.0960 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 02:03:47.1444 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 02:09:29.3549 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 02:09:29.5061 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-26 02:09:31.7362 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetById with parameters [1]
+2020-07-26 02:09:31.7870 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetById
+2020-07-26 02:09:41.2001 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate with parameters [{"Id":1,"FirstName":"Mustafa","LastName":"Y\u0131lmaz","Birthday":"1995-03-23T00:00:00","ProfilePictureUrl":"\\img\\uploads\\birthdayPersonProfiles\\7816a2d0-3783-46a5-a510-6da615b32ae0_free-cargo.png","FirstLetter":null,"TimeUntilBirthday":null,"UserId":"2ac9e7d4-82db-4c34-ab66-f8774ba05981"}]
+2020-07-26 02:09:41.3416 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-26 02:09:41.4138 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 02:09:41.4379 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-26 02:09:50.8987 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-26 02:09:50.9167 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree

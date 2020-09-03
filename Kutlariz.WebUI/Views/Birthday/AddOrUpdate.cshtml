@@ -1,0 +1,47 @@
+﻿@model AddOrUpdateBirthdayPersonDto
+@{
+    ViewData["Title"] = "Add Or Update";
+}
+
+<div class="card">
+    <div class="container">
+        <h1>Doğum günü @(Model.Id == 0 ? "Ekle" : "Güncelle")</h1> 
+        <form id="register-form" asp-controller="Birthday" asp-action="AddOrUpdate" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="ProfilePictureUrl" />
+
+            <span asp-validation-for="FirstName"></span>
+            <input asp-for="FirstName" class="form-control" placeholder="Ad" />
+
+            <span asp-validation-for="LastName"></span>
+            <input asp-for="LastName" class="form-control" placeholder="Soyad" />
+
+            <span asp-validation-for="Birthday"></span>
+            <input asp-for="Birthday" type="date" class="form-control" />
+
+            <div class="input-group">
+                <div class="input-wrapper">
+                    @if (Model.Id != 0 && Model.ProfilePictureUrl != null)
+                    {
+                        <label>Profil Resmi</label>
+                        <figure class="profile-picture">
+                            <img src="@Model.ProfilePictureUrl" alt="doğum günü kişisi profil resmi" />
+                        </figure>
+                    }
+                    else
+                    {
+                        <p>Profil resmi yüklenmemiş.</p>
+                    }
+                </div>
+                <div class="input-wrapper">
+                    <label>Profil resmi yükleyin</label>
+                    <input name="profilePicture" type="file" class="form-control" />
+                </div>
+            </div>
+
+            <input type="submit" value="@(Model.Id == 0 ? "Ekle" : "Güncelle")" class="card-btn" />
+        </form>
+    </div>
+</div>
+

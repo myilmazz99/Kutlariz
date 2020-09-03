@@ -1,0 +1,54 @@
+﻿@using Kutlariz.Core.Utilities.Helpers
+@model List<DisplayOrderDto>
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="orders">
+    @foreach (var order in Model)
+    {
+        <li class="card">
+            <ul class="order-images">
+                <li>
+                    <div class="profile-picture">
+                        @if (order.BirthdayPersonProfilePictureUrl == null)
+                        {
+                            <span class="fake-picture">@order.BirthdayPersonName[0]</span>
+                        }
+                        else
+                        {
+                            <img src="@order.BirthdayPersonProfilePictureUrl" alt="profil" />
+                        }
+                    </div> 
+                </li>
+                @if (order.CakePicture != null)
+                {
+                    <li>
+                <img class="cake-picture" src="@order.CakePicture" alt="pasta" />
+                    </li>
+                } 
+            </ul> 
+            <dl class="order-description-list">
+                <dt>Pasta Sahibi: </dt>
+                <dd>@order.BirthdayPersonName</dd>
+                <dt>Pasta Çeşidi: </dt>
+                <dd>@order.CakeType.DisplayName() Pasta</dd>
+                <dt>Pasta İçeriği: </dt>
+                <dd>@order.CakeIngredients, @order.CakeSize kişilik</dd>
+                <dt>Mesaj: </dt>
+                <dd>@order.Message</dd>
+                <dt>Adres: </dt>
+                <dd>
+                    <p>@order.Neigborhood Mahallesi @order.State/İZMİR</p>
+                    <p>@order.AddressDescription</p>
+                    <p>@order.PhoneNumber</p>
+                </dd>
+                <dt>Sipariş Durumu: </dt>
+                <dd>@order.Status.DisplayName()</dd>
+                <dt>Toplam Tutar: </dt>
+                <dd>@order.Price.ToString("c")</dd>
+            </dl>
+        </li> 
+    }
+</ul> 

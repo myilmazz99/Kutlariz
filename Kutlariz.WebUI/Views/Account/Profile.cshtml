@@ -1,0 +1,60 @@
+﻿@model ProfileModel
+@{
+    ViewData["Title"] = "Kutlarız - Kullanıcı Profili";
+}
+@section Styles{ 
+    <link href="~/OwlCarousel2/assets/owl.carousel.min.css" rel="stylesheet" />
+}
+
+<div class="card">
+    <h2>Eklediğiniz Doğum Günleri</h2>
+
+    @if (Model.BirthdayPeople.Count() == 0)
+    {
+        <a asp-controller="Birthday" asp-action="AddOrUpdate" class="card profile-card  add-birthday">
+                <i class="fas fa-plus"></i>
+        </a>
+    }
+    else
+    {
+        <div class="owl-carousel owl-theme">
+            @foreach (var item in Model.BirthdayPeople)
+            {
+                <div class="item">
+                    @await Component.InvokeAsync("BirthdayCard", new { page = "profile", model = item })
+                </div>
+            }
+        </div>
+
+        <div class="flex">
+            <a asp-controller="Birthday" asp-action="AddOrUpdate" class="card-btn">Doğum günü ekle</a>
+        </div>
+    }
+
+    <hr class="divide-nav-link" />
+
+    <h2>Kullanıcı Bilgileri</h2>
+
+    <table class="user-details">
+        <tr>
+            <th>İsim :</th>
+            <td>@(Model.User.FirstName + " " + Model.User.LastName)</td>
+        </tr>
+        <tr>
+            <th>Email :</th>
+            <td>@Model.User.Email</td>
+        </tr>
+        <tr>
+            <th>Doğum Tarihi :</th>
+            <td>@Model.User.BirthdayShortDate</td>
+        </tr>
+    </table>
+
+</div>
+
+@section Scripts{
+    <script src="~/OwlCarousel2/owl.carousel.min.js"></script>
+    <script>
+        activeOwlCarousel();
+    </script>
+}

@@ -1,0 +1,28 @@
+2020-08-31 23:52:14.3515 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-08-31 23:52:17.0553 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-08-31 23:52:29.5223 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-08-31 23:52:29.5946 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-08-31 23:52:29.8208 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:52:29.8512 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-08-31 23:52:50.5302 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:52:50.5806 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-08-31 23:52:50.6044 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method DoesExist
+2020-08-31 23:52:50.6306 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method DoesExist
+2020-08-31 23:52:50.6896 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Add
+2020-08-31 23:52:50.7067 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Add
+2020-08-31 23:54:51.8011 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:54:52.6613 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-08-31 23:54:52.9852 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method DoesExist
+2020-08-31 23:54:52.9956 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method DoesExist
+2020-08-31 23:54:53.1149 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Add
+2020-08-31 23:54:53.1149 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Add
+2020-08-31 23:55:05.5438 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:55:05.5698 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-08-31 23:55:05.5831 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method DoesExist
+2020-08-31 23:55:05.5831 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method DoesExist
+2020-08-31 23:55:05.6070 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Get
+2020-08-31 23:55:05.6255 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Get
+2020-08-31 23:55:20.9824 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:55:21.0269 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-08-31 23:59:51.6324 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-08-31 23:59:52.4882 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername

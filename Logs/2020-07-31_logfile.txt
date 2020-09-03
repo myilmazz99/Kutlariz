@@ -1,0 +1,269 @@
+2020-07-31 17:38:15.9162 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-31 17:38:16.0117 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 17:38:16.0706 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-31 17:38:16.1557 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 17:44:47.9922 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-31 17:44:49.4740 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 17:44:51.1023 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-31 17:44:51.2493 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 17:46:13.4320 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-31 17:46:14.7452 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 17:46:15.2308 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-31 17:46:15.3342 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 17:46:17.7683 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-31 17:46:17.7991 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 17:46:17.8134 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-31 17:46:17.8386 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 18:08:04.2606 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-31 18:08:06.2784 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 18:08:07.9786 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-31 18:08:08.0850 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 18:12:46.5258 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 18:12:48.5531 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 18:12:49.1172 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 18:12:49.2689 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 18:13:03.7417 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 18:13:03.7417 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 18:13:55.1874 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 18:13:55.4137 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 18:13:55.4977 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 18:13:55.5164 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 18:13:55.5348 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 18:13:55.5584 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 18:37:11.6328 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 18:37:14.0902 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 18:37:14.7990 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 18:37:14.9444 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 18:37:35.8493 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 18:37:35.8623 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 18:38:48.7617 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 18:38:48.9694 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 18:38:49.0643 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 18:38:49.0854 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 18:38:49.1016 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 18:38:49.1234 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:09:20.8211 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:09:20.9297 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:09:20.9865 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:09:21.1002 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:09:25.0785 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:09:25.1052 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:09:25.1205 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:09:25.1447 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:09:40.2699 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 21:09:40.2833 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 21:12:45.5082 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:12:47.2879 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:12:47.8932 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:12:48.0102 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:13:22.7059 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:13:22.7419 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:13:22.7575 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:13:22.7852 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:13:38.5937 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 21:13:38.6081 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 21:14:04.6174 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 21:14:04.7944 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 21:14:04.8764 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:14:04.8925 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:14:04.9071 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:14:04.9215 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:16:04.0421 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:16:05.0794 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:16:05.4047 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:16:05.5011 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:20:03.5076 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:20:04.7626 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:20:05.1787 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:20:05.2776 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:20:27.4655 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:20:28.4755 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:20:28.8243 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:20:28.9123 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:20:31.1058 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:20:31.1337 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:20:31.1491 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:20:31.1839 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:20:49.4882 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 21:20:49.5014 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 21:20:52.0424 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 21:20:52.2035 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 21:20:52.2763 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:20:52.2904 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:20:52.3035 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:20:52.3035 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:21:01.1100 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Delete
+2020-07-31 21:21:01.1474 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Delete
+2020-07-31 21:21:01.1813 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:21:01.1953 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:21:01.1953 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:21:01.2220 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:21:26.5779 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 21:21:26.5907 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 21:21:36.0595 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 21:21:36.0905 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 21:21:36.1229 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:21:36.1368 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:21:36.1510 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:21:36.1646 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:21:55.3680 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:21:55.3856 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:21:55.3998 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:21:55.4142 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:22:03.2312 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:22:03.2513 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:22:03.2678 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:22:03.2852 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:22:40.7796 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:22:41.7836 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:22:42.1531 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:22:42.2182 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:23:16.1130 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetUserId
+2020-07-31 21:23:16.1285 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetUserId
+2020-07-31 21:23:16.1419 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate
+2020-07-31 21:23:16.3101 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-31 21:23:16.3821 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:23:16.3996 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:23:16.4133 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:23:16.4133 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:24:33.7453 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:24:34.7311 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:24:35.1652 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:24:35.2290 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:25:58.7406 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:25:59.7571 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:26:00.1391 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:26:00.2091 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:27:05.4195 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Delete
+2020-07-31 21:27:05.4723 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Delete
+2020-07-31 21:27:05.6345 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:27:05.6517 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:27:05.6659 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:27:05.6796 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:28:13.3526 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:28:13.3755 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:28:13.3917 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:28:13.4330 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:29:04.6890 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:29:04.7106 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:29:04.7305 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:29:04.7472 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:29:22.4475 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:29:23.4483 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:29:23.8284 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:29:23.9157 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:30:56.8273 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:30:57.8352 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:30:58.2044 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:30:58.2877 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:31:59.0328 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:31:59.0621 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:31:59.0766 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:31:59.0981 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:33:20.9454 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:33:21.9729 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:33:22.3509 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:33:22.4169 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:35:18.0120 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:35:19.0178 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:35:19.4057 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:35:19.4700 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:36:27.3850 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:36:28.4182 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:36:28.8015 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:36:28.8664 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:37:05.0244 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:37:06.0184 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:37:06.3977 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:37:06.4626 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:37:57.3037 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:37:58.3692 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:37:58.7509 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:37:58.8173 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:39:09.4914 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:39:10.5245 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:39:10.9242 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:39:10.9891 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:39:42.2030 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:39:42.2754 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:39:42.3137 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:39:42.3714 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:39:49.0549 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:39:49.0836 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:39:49.1012 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:39:49.1449 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:40:51.3664 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:40:51.3913 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:40:51.4076 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:40:51.4231 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:41:05.4017 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:41:05.4252 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:41:05.4435 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:41:05.4612 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:41:56.4949 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:41:57.5158 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:41:57.9039 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:41:57.9865 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:42:35.8523 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:42:36.8778 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:42:37.2541 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:42:37.3407 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:43:26.4306 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:43:27.4250 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:43:27.8022 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:43:27.8848 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:43:51.2829 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:43:51.3138 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:43:51.3295 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 21:43:51.3449 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 21:43:53.7808 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:43:53.8036 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:43:53.8215 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:43:53.8441 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 21:44:13.7530 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 21:44:13.7709 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 21:44:13.7858 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId
+2020-07-31 21:44:13.8004 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-31 22:34:30.5438 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 22:34:30.5746 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 22:34:30.5916 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 22:34:30.6075 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 22:35:14.6093 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:35:15.3500 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:40:54.7107 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 22:40:55.8203 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 22:40:56.2153 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 22:40:56.3111 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 22:41:43.3924 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:41:43.9497 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:42:08.9994 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:42:09.0581 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:43:51.5565 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:43:52.6220 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:48:47.7276 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:48:48.3639 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:56:54.3065 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 22:56:55.5535 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 22:56:56.9063 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 22:56:57.0026 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 22:57:18.9485 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 22:57:18.9965 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 22:59:24.3098 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 22:59:25.7348 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 22:59:26.2200 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 22:59:26.3301 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 22:59:49.4061 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 23:00:36.0341 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-31 23:00:44.8690 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment
+2020-07-31 23:03:27.4993 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 23:03:29.0051 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 23:03:29.5303 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 23:03:29.6596 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 23:06:54.4250 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 23:06:54.5533 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 23:06:54.6157 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 23:06:54.7098 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-31 23:50:40.9018 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-07-31 23:50:41.0245 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-31 23:50:41.0829 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree
+2020-07-31 23:50:41.1775 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree

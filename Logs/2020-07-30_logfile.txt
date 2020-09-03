@@ -1,0 +1,38 @@
+2020-07-30 00:18:13.2513 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["AdminAdmin5581"]
+2020-07-30 00:18:13.3475 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:18:13.4122 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["2ac9e7d4-82db-4c34-ab66-f8774ba05981"]
+2020-07-30 00:18:13.5005 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-30 00:18:18.3111 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Logout with parameters []
+2020-07-30 00:18:18.3418 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Logout
+2020-07-30 00:18:59.4200 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Register with parameters [{"FirstName":"Bihter","LastName":"Ziyagil","Email":"bihter@bihter.oc","Birthday":"2011-11-11T00:00:00","Password":"Musti1","RePassword":"Musti1"}]
+2020-07-30 00:18:59.5257 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Register
+2020-07-30 00:19:10.3775 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login with parameters [{"Email":"bihter@bihter.oc","Password":"Musti1"}]
+2020-07-30 00:19:10.4366 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-07-30 00:19:10.4696 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 00:19:10.4848 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:19:10.5008 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-30 00:19:10.5154 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-30 00:19:35.7283 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 00:19:35.7458 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:19:35.7837 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method AddOrUpdate with parameters [{"Id":0,"FirstName":"Mustafa","LastName":"Y\u0131lmaz","Birthday":"1995-03-23T00:00:00","ProfilePictureUrl":"\\img\\uploads\\birthdayPersonProfiles\\6b67341b-5e08-4b80-b061-2b3bbd4644e5_gamingBg.png","FirstLetter":null,"TimeUntilBirthday":null,"UserId":"08ba64b1-2e33-40da-ad7d-42835536e70a"}]
+2020-07-30 00:19:35.8492 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method AddOrUpdate
+2020-07-30 00:19:35.9033 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 00:19:35.9182 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:19:35.9369 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-30 00:19:35.9595 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-30 00:19:59.6087 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 00:19:59.6277 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:19:59.6437 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetAllByUserId with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-30 00:19:59.6584 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetAllByUserId
+2020-07-30 00:58:39.1194 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 00:58:39.2421 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 00:58:39.2963 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-30 00:58:39.3951 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-30 01:00:37.2607 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment with parameters [{"Id":0,"CakeType":0,"CakeIngredients":null,"Message":null,"CakeSize":0,"BirthdayPersonName":"Mustafa Y\u0131lmaz","AddressDescription":"Oras\u0131 Buras\u0131","Neigborhood":"Atat\u00FCrk","State":"Urla","Status":0,"PhoneNumber":"05312836199","Email":"bihter@bihter.oc","UserId":null,"BoutiqueCakePictureUrl":null,"CardHolderName":"Musti Y\u0131lki","ExpireMonth":"11","ExpireYear":"25","Cvc":"114","CardNumber":"14222020396947","Price":0}]
+2020-07-30 01:00:57.5474 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
+2020-07-30 01:02:57.3470 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername with parameters ["bihter@bihter.oc"]
+2020-07-30 01:02:58.6247 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-07-30 01:02:59.1067 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method GetClosestThree with parameters ["08ba64b1-2e33-40da-ad7d-42835536e70a"]
+2020-07-30 01:02:59.2100 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method GetClosestThree
+2020-07-30 01:05:04.4432 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method CompletePayment with parameters [{"Id":0,"CakeType":0,"CakeIngredients":null,"Message":null,"CakeSize":0,"BirthdayPersonName":"Mustafa Y\u0131lmaz","AddressDescription":"okokokok","Neigborhood":"Atat\u00FCrk","State":"Bal\u00E7ova","Status":0,"PhoneNumber":"05312836199","Email":"bihter@bihter.oc","UserId":null,"BoutiqueCakePictureUrl":null,"CardHolderName":"Mustafa Y\u0131lmaz","ExpireMonth":"11","ExpireYear":"25","Cvc":"115","CardNumber":"12121313141415","Price":0}]
+2020-07-30 01:05:08.2230 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method CompletePayment
