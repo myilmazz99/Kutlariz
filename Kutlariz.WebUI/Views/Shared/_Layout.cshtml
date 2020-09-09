@@ -4,19 +4,18 @@
 <head>
     <title>Birthday App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/css/style.css" rel="stylesheet" />
-    <link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
-    <link href="~/AlertifyJS/css/alertify.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/css/bundle.css" />
+    <script src="~/assets/main.bundle.js" defer></script>
     @RenderSection("Styles", false)
 </head>
 <body>
 
-    <div id="layout"> 
-         
+    <div id="layout">
+
         <nav>
             <div class="container">
                 <div id="brand"><img src="~/img/kutlariz.png" alt="Alternate Text" /></div>
-                <div class="nav-expand-btn" onclick="expandNav()">
+                <div class="nav-expand-btn">
                     <span class="first-line"></span>
                     <span class="second-line"></span>
                     <span class="third-line"></span>
@@ -24,32 +23,32 @@
 
             </div>
         </nav>
-        <div class="nav-expand nav-expand-false">
-                <ul>
-                    <li><a href="/" class="nav-link">Anasayfa</a></li>
-                    @if (User.IsInRole("admin"))
-                    {
-                        <li><a asp-controller="Admin" asp-action="Index" class="nav-link">Admin Panel</a></li>
-                    }
-                </ul>
-                <hr class="divide-nav-link" />
-                <ul>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <li><a asp-controller="Account" asp-action="Profile" class="nav-link">Profil</a></li>
-                        <li><a asp-controller="Order" asp-action="Orders" class="nav-link">Siparişlerim</a></li>
-                        <li><a asp-controller="Account" asp-action="Logout" class="nav-link">Çıkış Yap</a></li>
-                    }
-                    else
-                    {
-                        <li><a asp-controller="Account" asp-action="Login" class="nav-link">Giriş Yap</a></li>
-                        <li><a asp-controller="Account" asp-action="Register" class="nav-link">Kayıt Ol</a></li>
-                    }
-                </ul>
+        <div class="nav-expand">
+            <ul>
+                <li><a href="/" class="nav-link">Anasayfa</a></li>
+                @if (User.IsInRole("admin"))
+                {
+                    <li><a asp-controller="Admin" asp-action="Index" class="nav-link">Admin Panel</a></li>
+                }
+            </ul>
+            <hr class="divide-nav-link" />
+            <ul>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a asp-controller="Account" asp-action="Profile" class="nav-link">Profil</a></li>
+                    <li><a asp-controller="Order" asp-action="Orders" class="nav-link">Siparişlerim</a></li>
+                    <li><a asp-controller="Account" asp-action="Logout" class="nav-link">Çıkış Yap</a></li>
+                }
+                else
+                {
+                    <li><a asp-controller="Account" asp-action="Login" class="nav-link">Giriş Yap</a></li>
+                    <li><a asp-controller="Account" asp-action="Register" class="nav-link">Kayıt Ol</a></li>
+                }
+            </ul>
         </div>
 
         <main>
-           @RenderBody()
+            @RenderBody()
         </main>
 
         <footer>
@@ -71,22 +70,19 @@
 
 
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <script src="~/AlertifyJS/alertify.min.js"></script>
     @if (TempData["result"] != null)
     {
         ResultModel result = TempData.Get<ResultModel>("result");
-        <script>
-            alertify.set('notifier', 'position', 'top-center');
+        <script type="module" defer>
+            myModule.throwAlert().set('notifier', 'position', 'top-center');
             if (@result.IsSuccess.ToString().ToLower()) {
-                alertify.success("@result.Message");
+                myModule.throwAlert().success("@result.Message");
             }
             else {
-                alertify.error("@result.Message");
+                myModule.throwAlert().error("@result.Message");
             }
         </script>
     }
     @RenderSection("Scripts", false)
-</body>
-</html>
+</body >
+</html >

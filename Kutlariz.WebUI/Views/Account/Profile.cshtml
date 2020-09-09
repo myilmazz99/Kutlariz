@@ -2,9 +2,6 @@
 @{
     ViewData["Title"] = "Kutlarız - Kullanıcı Profili";
 }
-@section Styles{ 
-    <link href="~/OwlCarousel2/assets/owl.carousel.min.css" rel="stylesheet" />
-}
 
 <div class="card">
     <h2>Eklediğiniz Doğum Günleri</h2>
@@ -17,14 +14,14 @@
     }
     else
     {
-        <div class="owl-carousel owl-theme">
+        <ul class="birthday-slider">
             @foreach (var item in Model.BirthdayPeople)
             {
-                <div class="item">
+                <li>
                     @await Component.InvokeAsync("BirthdayCard", new { page = "profile", model = item })
-                </div>
+                </li>
             }
-        </div>
+        </ul>
 
         <div class="flex">
             <a asp-controller="Birthday" asp-action="AddOrUpdate" class="card-btn">Doğum günü ekle</a>
@@ -51,10 +48,3 @@
     </table>
 
 </div>
-
-@section Scripts{
-    <script src="~/OwlCarousel2/owl.carousel.min.js"></script>
-    <script>
-        activeOwlCarousel();
-    </script>
-}

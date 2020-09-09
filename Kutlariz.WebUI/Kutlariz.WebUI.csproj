@@ -5,9 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Sass\style.css" />
-    <Content Include="Sass\style.scss" />
-    <Content Include="src\index.js" />
+    <Content Include="src\img\birthdayBG.jpg" />
+    <Content Include="src\scss\style.css" />
+    <Content Include="src\scss\style.scss" />
+    <Content Include="src\js\main.js" />
   </ItemGroup>
 
   <ItemGroup>

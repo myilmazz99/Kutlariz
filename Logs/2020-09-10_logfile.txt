@@ -1,0 +1,8 @@
+2020-09-10 00:02:45.4409 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-09-10 00:02:46.5421 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-09-10 00:02:46.6086 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-09-10 00:02:46.6358 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-09-10 00:02:51.4731 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-09-10 00:02:51.5059 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername
+2020-09-10 00:03:22.7931 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method FindByUsername
+2020-09-10 00:03:22.8409 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method FindByUsername

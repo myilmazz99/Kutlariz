@@ -31,7 +31,7 @@ namespace Kutlariz.WebUI
         {
             services.AddAutoMapper(typeof(MappingProfile));
 
-            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB; Database=KutlarizDB; integrated security=true;"));
+            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(@"Server=tcp:kutlariz.database.windows.net,1433;Initial Catalog=kutlarizdb;Persist Security Info=False;User ID=admin_kutlariz;Password=Kutmusti230395;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
             services.AddIdentity<ApplicationUser, IdentityRole>(opt=> {
                 opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöpqrstuüvwxyzABCÇDEFGÐHIÝJKLMNOÖPQRSTUÜVWXYZ0123456789-._@+";
                 opt.Password.RequireDigit = false;

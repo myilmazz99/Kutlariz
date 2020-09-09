@@ -35,14 +35,14 @@
 
         <ul class="cake-types">
             <li class="cake-type">
-                <input onchange="alterCakeType('boutique')" id="boutique-cake" type="radio" asp-for="Order.CakeType" value="Boutique" checked />
+                <input id="boutique-cake" type="radio" asp-for="Order.CakeType" value="Boutique" checked />
                 <label for="boutique-cake">
                     <img src="/img/boutique-cake.jpg" alt="butik pasta" />
                     <figcaption>Butik Pasta</figcaption>
                 </label>
             </li>
             <li class="cake-type">
-                <input onchange="alterCakeType('cream')" id="cream-cake" type="radio" asp-for="Order.CakeType" value="Cream" />
+                <input id="cream-cake" type="radio" asp-for="Order.CakeType" value="Cream" />
                 <label for="cream-cake">
                     <img src="/img/cream-cake.jpg" alt="kremalı pasta" />
                     <figcaption>Kremalı Pasta</figcaption>
@@ -118,13 +118,13 @@
             <div class="input-group">
                 <div class="input-wrapper">
                     <label>
-                        <input onchange="changePaymentType('credit')" type="radio" asp-for="Order.PaymentType" value="credit" checked />
+                        <input type="radio" asp-for="Order.PaymentType" value="credit" checked />
                         Kredi/Banka Kartı
                     </label>
                 </div>
                 <div class="input-wrapper">
                     <label>
-                        <input onchange="changePaymentType('ondoor')" type="radio" asp-for="Order.PaymentType" value="ondoor" />
+                        <input type="radio" asp-for="Order.PaymentType" value="ondoor" />
                         Kapıda
                     </label>
                 </div>
@@ -171,12 +171,4 @@
         <input class="card-btn" type="submit" value="Siparişi Tamamla" />
     </section>
 </form>
-
-@section Scripts{
-    <script>
-        alterCakeType(document.querySelector('input[name="Order.CakeType"]:checked').value.toLowerCase());
-        handlePrice();
-        changePaymentType(document.querySelector('input[name="Order.PaymentType"]:checked').value.toLowerCase());
-    </script>
-}
 
