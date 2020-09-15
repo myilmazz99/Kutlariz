@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'kutlariz'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_397ee51514a94577b4c3f4be19db1204 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ee6ab36627784d76a09dbb5cd2c3f37a }}
         package: ${{env.DOTNET_ROOT}}/myapp 
