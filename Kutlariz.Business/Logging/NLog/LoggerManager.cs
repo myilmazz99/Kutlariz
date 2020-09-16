@@ -12,7 +12,7 @@ namespace Kutlariz.Business.Logging.NLog
 
         public LoggerManager()
         {
-            LogManager.LoadConfiguration(@"C:\Users\Mustafa\Desktop\Web_Gelistirme\Back-End Development\ASP.NET_CORE_MVC\Kutlariz\Kutlariz.Business\Logging\Nlog\nlog.config");
+            LogManager.LoadConfiguration(@"Logging\NLog\nlog.config");
         }
 
         public void LogError(Exception ex, string message)
