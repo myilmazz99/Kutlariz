@@ -1,0 +1,6 @@
+2020-09-14 00:50:01.0416 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-09-14 00:50:03.3886 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-09-14 00:51:50.7859 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-09-14 00:51:52.5659 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
+2020-09-14 00:59:26.6300 INFO Kutlariz.Business.Logging.NLog.LoggerManager Calling method Login
+2020-09-14 00:59:28.3666 INFO Kutlariz.Business.Logging.NLog.LoggerManager Done calling method Login
