@@ -2,7 +2,9 @@
 import alertify from 'alertifyjs';
 import 'alertifyjs/build/css/alertify.css';
 import '../scss/style.scss';
-import birthdayBG from '../img/birthdayBG.jpg';
+import '../img/birthdayBG.jpg';
+import '../img/404.svg';
+import '../img/500.svg';
 
 window.alertify = alertify;
 

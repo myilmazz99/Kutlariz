@@ -325,6 +325,30 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/img/404.svg":
+/*!*************************!*\
+  !*** ./src/img/404.svg ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../img/404.svg\");\n\n//# sourceURL=webpack://myModule/./src/img/404.svg?");
+
+/***/ }),
+
+/***/ "./src/img/500.svg":
+/*!*************************!*\
+  !*** ./src/img/500.svg ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../img/500.svg\");\n\n//# sourceURL=webpack://myModule/./src/img/500.svg?");
+
+/***/ }),
+
 /***/ "./src/img/birthdayBG.jpg":
 /*!********************************!*\
   !*** ./src/img/birthdayBG.jpg ***!
@@ -345,7 +369,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"throwAlert\", function() { return throwAlert; });\n/* harmony import */ var _fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all.js */ \"./node_modules/@fortawesome/fontawesome-free/js/all.js\");\n/* harmony import */ var _fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var alertifyjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alertifyjs */ \"./node_modules/alertifyjs/build/alertify.js\");\n/* harmony import */ var alertifyjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(alertifyjs__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alertifyjs/build/css/alertify.css */ \"./node_modules/alertifyjs/build/css/alertify.css\");\n/* harmony import */ var alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _img_birthdayBG_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/birthdayBG.jpg */ \"./src/img/birthdayBG.jpg\");\n\n\n\n\n\nwindow.alertify = alertifyjs__WEBPACK_IMPORTED_MODULE_1___default.a;\nif (document.querySelector('.birthday-slider') !== null) Promise.all(/*! import() | slider */[__webpack_require__.e(\"vendors~slider\"), __webpack_require__.e(\"slider\")]).then(__webpack_require__.bind(null, /*! ./slider */ \"./src/js/slider.js\"));\nif (document.querySelector('.payment-form') !== null) __webpack_require__.e(/*! import() | order */ \"order\").then(__webpack_require__.t.bind(null, /*! ./order */ \"./src/js/order.js\", 7));\n\nfunction expandNav() {\n  document.querySelector(\".nav-expand\").classList.toggle(\"expand\");\n  var btn = document.querySelector(\".nav-expand-btn\").children;\n\n  for (var i = 0; i < btn.length; i++) {\n    btn[i].classList.toggle(\"expand\");\n  }\n}\n\ndocument.querySelector('.nav-expand-btn').addEventListener('click', expandNav);\nvar throwAlert = function throwAlert() {\n  return alertifyjs__WEBPACK_IMPORTED_MODULE_1___default.a;\n};\n\n//# sourceURL=webpack://myModule/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"throwAlert\", function() { return throwAlert; });\n/* harmony import */ var _fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-free/js/all.js */ \"./node_modules/@fortawesome/fontawesome-free/js/all.js\");\n/* harmony import */ var _fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_all_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var alertifyjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! alertifyjs */ \"./node_modules/alertifyjs/build/alertify.js\");\n/* harmony import */ var alertifyjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(alertifyjs__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! alertifyjs/build/css/alertify.css */ \"./node_modules/alertifyjs/build/css/alertify.css\");\n/* harmony import */ var alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(alertifyjs_build_css_alertify_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _img_birthdayBG_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/birthdayBG.jpg */ \"./src/img/birthdayBG.jpg\");\n/* harmony import */ var _img_404_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/404.svg */ \"./src/img/404.svg\");\n/* harmony import */ var _img_500_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/500.svg */ \"./src/img/500.svg\");\n\n\n\n\n\n\n\nwindow.alertify = alertifyjs__WEBPACK_IMPORTED_MODULE_1___default.a;\nif (document.querySelector('.birthday-slider') !== null) Promise.all(/*! import() | slider */[__webpack_require__.e(\"vendors~slider\"), __webpack_require__.e(\"slider\")]).then(__webpack_require__.bind(null, /*! ./slider */ \"./src/js/slider.js\"));\nif (document.querySelector('.payment-form') !== null) __webpack_require__.e(/*! import() | order */ \"order\").then(__webpack_require__.t.bind(null, /*! ./order */ \"./src/js/order.js\", 7));\n\nfunction expandNav() {\n  document.querySelector(\".nav-expand\").classList.toggle(\"expand\");\n  var btn = document.querySelector(\".nav-expand-btn\").children;\n\n  for (var i = 0; i < btn.length; i++) {\n    btn[i].classList.toggle(\"expand\");\n  }\n}\n\ndocument.querySelector('.nav-expand-btn').addEventListener('click', expandNav);\nvar throwAlert = function throwAlert() {\n  return alertifyjs__WEBPACK_IMPORTED_MODULE_1___default.a;\n};\n\n//# sourceURL=webpack://myModule/./src/js/main.js?");
 
 /***/ }),
 

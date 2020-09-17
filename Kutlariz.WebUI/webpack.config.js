@@ -39,7 +39,7 @@ module.exports = (env, argv) => {
                     ]
                 },
                 {
-                    test: /\.(png|jpeg|jpg)$/,
+                    test: /\.(png|jpeg|jpg|svg)$/,
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',

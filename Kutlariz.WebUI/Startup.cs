@@ -2,10 +2,12 @@ using System;
 using System.Reflection;
 using AutoMapper;
 using FluentValidation.AspNetCore;
+using Kutlariz.Business.Logging;
 using Kutlariz.Business.Mapper.AutoMapper;
 using Kutlariz.Business.Validation.FluentValidation;
 using Kutlariz.Core.Entities;
 using Kutlariz.DataAccess.Concrete.Identity;
+using Kutlariz.WebUI.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -58,19 +60,22 @@ namespace Kutlariz.WebUI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerService logger)
         {
+
+            app.UseStatusCodePagesWithRedirects("/Error/{0}");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseExceptionHandler(logger);
             }
-            //app.UseHttpsRedirection();
+
+
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

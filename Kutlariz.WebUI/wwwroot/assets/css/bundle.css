@@ -1039,7 +1039,30 @@
   }
 }
 @charset "UTF-8";
-/*#FFBD59*/
+.error-page {
+  display: block;
+  height: 90vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.error-page img {
+  display: block;
+  width: 40%;
+  height: auto;
+}
+.error-page p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+.error-page p a {
+  color: #FFBD59;
+}
+
 * {
   margin: 0;
   padding: 0;
