@@ -24,7 +24,6 @@ namespace Kutlariz.WebUI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            throw new Exception();
             if (HttpContext.User.Identity.IsAuthenticated)
             {
                 var user = await _accountService.FindByUsername(HttpContext.User.Identity.Name);
