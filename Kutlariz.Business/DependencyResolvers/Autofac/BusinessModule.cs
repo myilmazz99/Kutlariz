@@ -27,7 +27,7 @@ namespace Kutlariz.Business.DependencyResolvers.Autofac
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<EfBirthdayPersonDal<KutlarizContext>>().As<IBirthdayPersonDal> ()
+            builder.RegisterType<EfBirthdayPersonDal>().As<IBirthdayPersonDal>()
                 .SingleInstance();
             builder.RegisterType<BirthdayPersonManager>().As<IBirthdayPersonService>()
                 .SingleInstance();
@@ -37,7 +37,7 @@ namespace Kutlariz.Business.DependencyResolvers.Autofac
                 .EnableInterfaceInterceptors()
                 .InterceptedBy(typeof(LoggingAspect));
 
-            builder.RegisterType<EfOrderDal<KutlarizContext>>().As<IOrderDal>()
+            builder.RegisterType<EfOrderDal>().As<IOrderDal>()
                 .SingleInstance();
             builder.RegisterType<OrderManager>().As<IOrderService>()
                 .SingleInstance()

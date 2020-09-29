@@ -19,7 +19,7 @@ namespace Kutlariz.WebUI.Infrastructure
                     var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
                     if (contextFeature != null)
                     {
-                        logger.LogError(CheckInnerException(contextFeature.Error), "");
+                        await Task.Run(() => logger.LogError(CheckInnerException(contextFeature.Error), ""));
                         context.Response.StatusCode = 500;
                     }
                 });

@@ -6,6 +6,7 @@ using Kutlariz.Business.Logging;
 using Kutlariz.Business.Mapper.AutoMapper;
 using Kutlariz.Business.Validation.FluentValidation;
 using Kutlariz.Core.Entities;
+using Kutlariz.DataAccess.Concrete.EntityFramework;
 using Kutlariz.DataAccess.Concrete.Identity;
 using Kutlariz.WebUI.Infrastructure;
 using Microsoft.AspNetCore.Builder;
@@ -33,9 +34,11 @@ namespace Kutlariz.WebUI
         {
             services.AddAutoMapper(typeof(MappingProfile));
 
-            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(@"Server=tcp:kutlariz.database.windows.net,1433;Initial Catalog=kutlarizdb;Persist Security Info=False;User ID=admin_kutlariz;Password=Kutmusti230395;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
-            services.AddIdentity<ApplicationUser, IdentityRole>(opt=> {
-                opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöpqrstuüvwxyzABCÇDEFGÐHIÝJKLMNOÖPQRSTUÜVWXYZ0123456789-._@+";
+            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(Configuration.GetSection("ConnectionString").Value));
+            services.AddDbContext<KutlarizContext>(options => options.UseSqlServer(Configuration.GetSection("ConnectionString").Value));
+            services.AddIdentity<ApplicationUser, IdentityRole>(opt =>
+            {
+                opt.User.AllowedUserNameCharacters = "abcÃ§defgÄŸhÄ±ijklmnoÃ¶pqrstuÃ¼vwxyzABCÃ‡DEFGÄžHIÄ°JKLMNOÃ–PQRSTUÃœVWXYZ0123456789-._@+";
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireUppercase = false;
                 opt.Password.RequireNonAlphanumeric = false;
@@ -54,12 +57,9 @@ namespace Kutlariz.WebUI
                 opt.Cookie = new CookieBuilder { HttpOnly = true, MaxAge = TimeSpan.FromDays(3), SameSite = SameSiteMode.Strict };
             });
 
-            services.AddControllersWithViews()
-                .AddFluentValidation(opt => opt.RegisterValidatorsFromAssemblyContaining(typeof(LoginValidator)))
-                .AddFluentValidation(opt => opt.RegisterValidatorsFromAssemblyContaining(typeof(BirthdayPersonValidator)));
+            services.AddControllersWithViews();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerService logger)
         {
 

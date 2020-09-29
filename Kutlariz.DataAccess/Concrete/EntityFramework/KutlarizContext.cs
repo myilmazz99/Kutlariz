@@ -8,9 +8,9 @@ namespace Kutlariz.DataAccess.Concrete.EntityFramework
 {
     public class KutlarizContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public KutlarizContext(DbContextOptions<KutlarizContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Server=tcp:kutlariz.database.windows.net,1433;Initial Catalog=kutlarizdb;Persist Security Info=False;User ID=admin_kutlariz;Password=Kutmusti230395;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
         }
 
         public DbSet<BirthdayPerson> BirthdayPersons { get; set; }
