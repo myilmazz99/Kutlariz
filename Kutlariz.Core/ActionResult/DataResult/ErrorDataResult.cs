@@ -6,13 +6,13 @@ namespace Kutlariz.Core.ActionResult.DataResult
 {
     public class ErrorDataResult<T> : DataResult<T>
     {
-        public ErrorDataResult(string message, T data) : base(true, data, message)
+        public ErrorDataResult(string message, T data) : base(false, data, message)
         {
         }
-        public ErrorDataResult(string message) : base(true, message)
+        public ErrorDataResult(string message) : base(false, message)
         {
         }
-        public ErrorDataResult(T data) : base(true, data)
+        public ErrorDataResult(T data) : base(false, data)
         {
         }
     }
