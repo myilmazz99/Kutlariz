@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using Kutlariz.Business.Abstract;
-using Kutlariz.Business.Aspects.Logging;
 using Kutlariz.Business.Caching;
-using Kutlariz.Business.Logging;
 using Kutlariz.Business.Validation.FluentValidation;
 using Kutlariz.Core.ActionResult;
 using Kutlariz.Core.ActionResult.DataResult;
@@ -10,12 +8,7 @@ using Kutlariz.Core.Constants;
 using Kutlariz.DataAccess.Abstract;
 using Kutlariz.Entities;
 using Kutlariz.Entities.Dto;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Kutlariz.Business.Concrete
@@ -70,7 +63,7 @@ namespace Kutlariz.Business.Concrete
 
         public async Task<DataResult<AddOrUpdateBirthdayPersonDto>> GetById(int Id)
         {
-            var birthdayPerson = _mapper.Map<AddOrUpdateBirthdayPersonDto>(await _birthdayPersonDal.GetById(Id));
+            var birthdayPerson = _mapper.Map<AddOrUpdateBirthdayPersonDto>(await _birthdayPersonDal.GetById(i => i.Id == Id));
             return new SuccessDataResult<AddOrUpdateBirthdayPersonDto>(birthdayPerson);
         }
 

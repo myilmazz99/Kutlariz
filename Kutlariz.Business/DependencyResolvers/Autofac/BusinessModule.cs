@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
-using Castle.DynamicProxy;
 using Kutlariz.Business.Abstract;
 using Kutlariz.Business.Aspects.Caching;
 using Kutlariz.Business.Aspects.Logging;
@@ -15,11 +14,6 @@ using Kutlariz.Business.Services.PaymentService;
 using Kutlariz.Business.Services.PaymentService.Iyzico;
 using Kutlariz.DataAccess.Abstract;
 using Kutlariz.DataAccess.Concrete.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 
 namespace Kutlariz.Business.DependencyResolvers.Autofac
 {
@@ -39,6 +33,7 @@ namespace Kutlariz.Business.DependencyResolvers.Autofac
 
             builder.RegisterType<EfOrderDal>().As<IOrderDal>()
                 .SingleInstance();
+
             builder.RegisterType<OrderManager>().As<IOrderService>()
                 .SingleInstance()
                 .EnableInterfaceInterceptors()
@@ -46,7 +41,9 @@ namespace Kutlariz.Business.DependencyResolvers.Autofac
 
             builder.RegisterType<LoggerManager>().As<ILoggerService>()
                 .SingleInstance();
+
             builder.RegisterType<LoggingAspect>().InstancePerDependency();
+
             builder.RegisterType<CachingAspect>().InstancePerDependency();
 
             builder.RegisterType<IyzicoPaymentManager>().As<IPaymentService>()

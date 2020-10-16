@@ -17,7 +17,7 @@ namespace Kutlariz.DataAccess.Concrete.EntityFramework
         public async Task<List<BirthdayPerson>> GetClosestThree(string userId)
         {
             var entities = await _context.BirthdayPersons.Where(i => i.UserId == userId)
-                .AsNoTracking()
+            .AsNoTracking()
                 .ToListAsync();
 
             return entities.OrderBy(i => CalculateDaysLeftTillNextBday.Calculate(i.Birthday))

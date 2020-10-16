@@ -12,6 +12,6 @@ namespace Kutlariz.DataAccess.Abstract
         Task Delete(int Id);
         Task Update(T entity);
         Task<List<T>> GetAll(Expression<Func<T, bool>> filter = null);
-        Task<T> GetById(int Id);
+        Task<T> GetById(Expression<Func<T, bool>> filter);
     }
 }
