@@ -1,14 +1,12 @@
 using System;
-using System.Reflection;
 using AutoMapper;
-using FluentValidation.AspNetCore;
 using Kutlariz.Business.Logging;
 using Kutlariz.Business.Mapper.AutoMapper;
-using Kutlariz.Business.Validation.FluentValidation;
 using Kutlariz.Core.Entities;
 using Kutlariz.DataAccess.Concrete.EntityFramework;
 using Kutlariz.DataAccess.Concrete.Identity;
 using Kutlariz.WebUI.Infrastructure;
+using Kutlariz.WebUI.Seeds;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -60,7 +58,7 @@ namespace Kutlariz.WebUI
             services.AddControllersWithViews();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerService logger)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerService logger, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
 
             app.UseStatusCodePagesWithRedirects("/Error/{0}");
@@ -89,6 +87,8 @@ namespace Kutlariz.WebUI
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            IdentitySeed.Seed(userManager, roleManager).Wait();
         }
     }
 }
