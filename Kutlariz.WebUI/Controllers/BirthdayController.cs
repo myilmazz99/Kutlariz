@@ -38,21 +38,21 @@ namespace Kutlariz.WebUI.Controllers
         {
             if (Id == null)
             {
-                return View(new AddOrUpdateBirthdayPersonDto { });
+                return View(new BirthdayPersonDto { });
             }
 
             var result = await _birthdayPerson.GetById((int)Id);
 
             if (result.Data == null)
             {
-                return View(new AddOrUpdateBirthdayPersonDto { });
+                return View(new BirthdayPersonDto { });
             }
 
             return View(result.Data);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddOrUpdate(AddOrUpdateBirthdayPersonDto model, IFormFile profilePicture)
+        public async Task<IActionResult> AddOrUpdate(BirthdayPersonDto model, IFormFile profilePicture)
         {
             var userId = _accountService.GetUserId(HttpContext.User);
             model.UserId = userId.Data;

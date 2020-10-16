@@ -26,7 +26,7 @@ namespace Kutlariz.Business.Concrete
             _cacheService = cacheService;
         }
 
-        public async Task<Result> AddOrUpdate(AddOrUpdateBirthdayPersonDto entity)
+        public async Task<Result> AddOrUpdate(BirthdayPersonDto entity)
         {
             var validation = Validator.Validate(entity, new BirthdayPersonValidator());
             if (!validation.IsSuccess) return validation;
@@ -61,10 +61,10 @@ namespace Kutlariz.Business.Concrete
             return new SuccessDataResult<List<BirthdayPersonDto>>(birthdays);
         }
 
-        public async Task<DataResult<AddOrUpdateBirthdayPersonDto>> GetById(int Id)
+        public async Task<DataResult<BirthdayPersonDto>> GetById(int Id)
         {
-            var birthdayPerson = _mapper.Map<AddOrUpdateBirthdayPersonDto>(await _birthdayPersonDal.GetById(i => i.Id == Id));
-            return new SuccessDataResult<AddOrUpdateBirthdayPersonDto>(birthdayPerson);
+            var birthdayPerson = _mapper.Map<BirthdayPersonDto>(await _birthdayPersonDal.GetById(i => i.Id == Id));
+            return new SuccessDataResult<BirthdayPersonDto>(birthdayPerson);
         }
 
         public async Task<DataResult<List<BirthdayPersonDto>>> GetClosestThree(string userId)

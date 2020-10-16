@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Kutlariz.Business.Validation.FluentValidation
 {
-    public class BirthdayPersonValidator : AbstractValidator<AddOrUpdateBirthdayPersonDto>
+    public class BirthdayPersonValidator : AbstractValidator<BirthdayPersonDto>
     {
         public BirthdayPersonValidator()
         {
