@@ -26,10 +26,6 @@
         <div class="nav-expand">
             <ul>
                 <li><a href="/" class="nav-link">Anasayfa</a></li>
-                @if (User.IsInRole("admin"))
-                {
-                    <li><a asp-controller="Admin" asp-action="Index" class="nav-link">Admin Panel</a></li>
-                }
             </ul>
             <hr class="divide-nav-link" />
             <ul>
