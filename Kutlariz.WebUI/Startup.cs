@@ -32,8 +32,8 @@ namespace Kutlariz.WebUI
         {
             services.AddAutoMapper(typeof(MappingProfile));
 
-            services.AddDbContext<IdentityContext>(options => options.UseNpgsql(Configuration.GetSection("ConnectionString").Value));
-            services.AddDbContext<KutlarizContext>(options => options.UseNpgsql(Configuration.GetSection("ConnectionString").Value));
+            services.AddDbContext<IdentityContext>(options => options.UseSqlServer(@"Server=arya.veridyen.com\MSSQLSERVER2016;Database=kutlariz;User Id=myyilmaz_admin;Password=Bilelimadmin1;"));
+            services.AddDbContext<KutlarizContext>(options => options.UseSqlServer(@"Server=arya.veridyen.com\MSSQLSERVER2016;Database=kutlariz;User Id=myyilmaz_admin;Password=Bilelimadmin1;"));
             services.AddIdentity<ApplicationUser, IdentityRole>(opt =>
             {
                 opt.User.AllowedUserNameCharacters = "abcçdefgğhıijklmnoöpqrstuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSTUÜVWXYZ0123456789-._@+";
